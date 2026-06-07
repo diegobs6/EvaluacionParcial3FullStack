@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/MicroService-Envio/pom.xml" />
+        <option value="$PROJECT_DIR$/MicroService-Pagos/pom.xml" />
+        <option value="$PROJECT_DIR$/MicroService-Pedido/pom.xml" />
+        <option value="$PROJECT_DIR$/MicroService-Carrito/pom.xml" />
+        <option value="$PROJECT_DIR$/MicroService-Reporte/pom.xml" />
+        <option value="$PROJECT_DIR$/MicroService-Usuario/pom.xml" />
+        <option value="$PROJECT_DIR$/MicroService-Producto/pom.xml" />
+        <option value="$PROJECT_DIR$/MicroService-Categoria/pom.xml" />
+        <option value="$PROJECT_DIR$/MicroService-Inventario/pom.xml" />
+        <option value="$PROJECT_DIR$/MicroService-Notificacion/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_21" default="true" project-jdk-name="21" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

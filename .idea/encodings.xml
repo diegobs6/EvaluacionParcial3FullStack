@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/MicroService-Carrito/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MicroService-Categoria/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MicroService-Envio/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MicroService-Inventario/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MicroService-Notificacion/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MicroService-Pagos/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MicroService-Pedido/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MicroService-Producto/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MicroService-Reporte/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MicroService-Usuario/src/main/java" charset="UTF-8" />
+  </component>
+</project>

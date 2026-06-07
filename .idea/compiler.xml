@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Annotation profile for MicroService-Usuario" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.46/lombok-1.18.46.jar" />
+        </processorPath>
+        <module name="MicroService-Categoria" />
+        <module name="MicroService-Usuario" />
+        <module name="MicroService-Producto" />
+        <module name="MicroService-Carrito" />
+        <module name="MicroService-Pedido" />
+        <module name="MicroService-Reporte" />
+        <module name="MicroService-Notificacion" />
+        <module name="MicroService-Envio" />
+        <module name="MicroService-Inventario" />
+        <module name="MicroService-Pagos" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="MicroService-Carrito" options="-parameters" />
+      <module name="MicroService-Categoria" options="-parameters" />
+      <module name="MicroService-Envio" options="-parameters" />
+      <module name="MicroService-Inventario" options="-parameters" />
+      <module name="MicroService-Notificacion" options="-parameters" />
+      <module name="MicroService-Pagos" options="-parameters" />
+      <module name="MicroService-Pedido" options="-parameters" />
+      <module name="MicroService-Producto" options="-parameters" />
+      <module name="MicroService-Reporte" options="-parameters" />
+      <module name="MicroService-Usuario" options="-parameters" />
+    </option>
+  </component>
+</project>
