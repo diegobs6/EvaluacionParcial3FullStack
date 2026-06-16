@@ -18,10 +18,12 @@ import cl.EvaluacionParcial3.MicroService_Carrito.service.CarritoService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 
 
 
+@Tag(name = "Carrito de compras", description = "Operaciones relacionadas con los carritos de compra online")
 @RestController
 @RequestMapping("/api/carrito")
 public class CarritoController {
