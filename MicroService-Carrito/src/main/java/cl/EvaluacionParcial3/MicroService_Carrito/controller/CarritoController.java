@@ -23,7 +23,7 @@ import jakarta.validation.Valid;
 
 
 
-@Tag(name = "Carrito de compras", description = "Operaciones relacionadas con los carritos de compra online")
+@Tag(name = "Carrito", description = "Operaciones relacionadas con los carritos de compra online")
 @RestController
 @RequestMapping("/api/carrito")
 public class CarritoController {
