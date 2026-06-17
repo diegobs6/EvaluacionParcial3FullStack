@@ -21,7 +21,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("v1/usuarios")
+@RequestMapping("/v1/usuarios")
 @Slf4j
 @Tag(name = "Usuarios", description = "Operaciones relacionadas con los usuarios")
 public class UsuarioController {
