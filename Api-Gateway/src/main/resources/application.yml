@@ -1,6 +1,6 @@
 spring:
   application:
-    name: api-gateway
+    name: Api-Gateway
 
   cloud:
     gateway:
@@ -61,6 +61,8 @@ spring:
 
 eureka:
   client:
+    register-with-eureka: false
+    fetch-registry: true
     service-url:
       defaultZone: ${EUREKA_URL:http://localhost:8761/eureka/}
 
