@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS notificaciones (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    usuario_id BIGINT NOT NULL,
+    tipo VARCHAR(30) NOT NULL,
+    mensaje TEXT NOT NULL,
+    leida BOOLEAN NOT NULL DEFAULT FALSE,
+    fecha_creacion DATETIME NOT NULL,
+) 
