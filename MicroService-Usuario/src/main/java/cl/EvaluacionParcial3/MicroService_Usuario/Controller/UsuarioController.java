@@ -71,7 +71,7 @@ public class UsuarioController {
     @Operation(summary = "Obtener usuario por ID", description = "Obtiene un usuario mediante su ID")
     @ApiResponses(value = {
             @ApiResponse(responseCode = "200", description = "Operacion realizada con exito"),
-            @ApiResponse(responseCode = "404", description = "Usuario no encontrada"),
+            @ApiResponse(responseCode = "404", description = "Usuario no encontrado"),
             @ApiResponse(responseCode = "500", description = "Error interno del servidor")
     })
     public EntityModel<UsuarioResponse> buscarUsuarioPorId(@PathVariable Long id) {
@@ -97,7 +97,7 @@ public class UsuarioController {
     @Operation(summary = "Obtener usuario por RUN", description = "Obtiene un usuario mediante su RUN")
     @ApiResponses(value = {
             @ApiResponse(responseCode = "200", description = "Operacion realizada con exito"),
-            @ApiResponse(responseCode = "404", description = "Usuario no encontrada"),
+            @ApiResponse(responseCode = "404", description = "Usuario no encontrado"),
             @ApiResponse(responseCode = "500", description = "Error interno del servidor")
     })
     public UsuarioResponse buscarUsuarioPorRun(@PathVariable String run) {
