@@ -74,9 +74,22 @@ public class UsuarioController {
             @ApiResponse(responseCode = "404", description = "Usuario no encontrada"),
             @ApiResponse(responseCode = "500", description = "Error interno del servidor")
     })
-    public UsuarioResponse buscarUsuarioPorId(@PathVariable Long id) {
-        log.info("GET /api/usuarios/buscarUsuarioPorId/{}", id);
-        return usuarioService.buscarPorId(id);
+    public EntityModel<UsuarioResponse> buscarUsuarioPorId(@PathVariable Long id) {
+        log.info("Obtener usuario por ID: {}", id);
+
+        UsuarioResponse dto = usuarioService.buscarPorId(id);
+
+        return EntityModel.of( dto,
+                linkTo(methodOn(UsuarioController.class)
+                        .buscarUsuarioPorId(id))
+                        .withSelfRel(),
+                linkTo(methodOn(UsuarioController.class)
+                        .obtenerUsuarios())
+                        .withRel("usuarios"),
+                linkTo(methodOn(UsuarioController.class)
+                        .buscarUsuarioPorRun(dto.getRun()))
+                        .withRel("buscar-usuario-por-run")
+        );
     }
 
     //BUSCAR USUARIO POR RUN
