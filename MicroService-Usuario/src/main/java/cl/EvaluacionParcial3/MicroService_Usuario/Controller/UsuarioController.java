@@ -100,9 +100,24 @@ public class UsuarioController {
             @ApiResponse(responseCode = "404", description = "Usuario no encontrado"),
             @ApiResponse(responseCode = "500", description = "Error interno del servidor")
     })
-    public UsuarioResponse buscarUsuarioPorRun(@PathVariable String run) {
-        log.info("GET /api/usuarios/buscarUsuarioPorRun/{}", run);
-        return usuarioService.buscarPorRun(run);
+    public EntityModel<UsuarioResponse> buscarUsuarioPorRun(@PathVariable String run) {
+        log.info("Obtener usuario por RUN: {}", run);
+
+        UsuarioResponse dto = usuarioService.buscarPorRun(run);
+
+        return EntityModel.of(dto,
+                linkTo(methodOn(UsuarioController.class)
+                        .buscarUsuarioPorRun(run))
+                        .withSelfRel(),
+
+                linkTo(methodOn(UsuarioController.class)
+                .buscarUsuarioPorId(dto.getId()))
+                .withRel("buscar-usuario-por-id"),
+
+                linkTo(methodOn(UsuarioController.class)
+                .obtenerUsuarios())
+                .withRel("listar-usuarios")
+        );
     }
 
     //CREAR NUEVO USUARIO
