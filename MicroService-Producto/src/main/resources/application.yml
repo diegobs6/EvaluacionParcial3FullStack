@@ -6,6 +6,7 @@ spring:
     url: jdbc:mysql://localhost:3306/db_producto
     username: root
     password:
+
     driver-class-name: com.mysql.cj.jdbc.Driver
 
   jpa:
@@ -39,3 +40,4 @@ springdoc:
 microservicios:
   categorias:
     url: ${CATEGORIAS_URL:http://localhost:8082}
+
