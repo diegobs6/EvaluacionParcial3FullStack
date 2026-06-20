@@ -1,0 +1,41 @@
+spring:
+  application:
+    name: MicroService-Producto
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/db_producto
+    username: root
+    password:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.MySQLDialect
+
+  flyway:
+    enabled: true
+
+eureka:
+  client:
+    service-url:
+      defaultZone: ${EUREKA_URL:http://localhost:8761/eureka/}
+
+server:
+  port: ${PORT:8083}
+  forward-headers-strategy: framework
+
+springdoc:
+  api-docs:
+    enabled: true
+  swagger-ui:
+    enabled: true
+    path: /producto/swagger-ui.html
+
+microservicios:
+  categorias:
+    url: ${CATEGORIAS_URL:http://localhost:8082}
