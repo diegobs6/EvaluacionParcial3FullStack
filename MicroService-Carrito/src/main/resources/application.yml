@@ -21,6 +21,7 @@ spring:
   
   flyway:
     enabled: true
+    ignore-migration-patterns: "*:*"
 
 springdoc:
   api-docs:
@@ -35,3 +36,7 @@ eureka:
     fetch-registry: true
     service-url:
       defaultZone: ${EUREKA_URL:http://localhost:8761/eureka/}
+
+microservicios:
+  productos:
+    url: http://localhost:8081
