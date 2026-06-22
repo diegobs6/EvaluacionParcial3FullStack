@@ -44,7 +44,6 @@ public class UsuarioController {
         log.info("Listando todos los usuarios registrados.");
         List<EntityModel<UsuarioResponse>> usuarios = usuarioService.buscarUsuarios().stream()
                 .map(usuario -> {
-
                     UsuarioResponse dto = UsuarioResponse.builder()
                             .id(usuario.getId())
                             .run(usuario.getRun())
