@@ -187,10 +187,10 @@ public class UsuarioServiceTest {
 
         usuarioService.eliminarUsuario(id);
 
-
         verify(usuarioRepository, times(1)).deleteById(id);
     }
 
+    //Test para eliminar usuario cuando el ID no existe
     @Test
     public void eliminarUsuarioNoSuchElementException() {
 
