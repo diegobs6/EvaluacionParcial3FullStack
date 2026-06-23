@@ -6,9 +6,9 @@ spring:
     name: MicroService-Carrito
   
   datasource:
-    url: jdbc:mysql://thomas.proxy.rlwy.net:35855/railway
+    url: jdbc:mysql://localhost:3306/db_carrito
     username: root
-    password: xIbrJlrixuUvFYxVcBRhvtIJFNjtPBLW
+    password:
     driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     hibernate:
