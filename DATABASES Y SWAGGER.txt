@@ -1,0 +1,25 @@
+Databases:
+
+CREATE DATABASE db_usuario;
+CREATE DATABASE db_carrito;
+CREATE DATABASE db_envio;
+CREATE DATABASE db_inventario;
+CREATE DATABASE db_notificacion;
+CREATE DATABASE db_pagos;
+CREATE DATABASE db_pedido;
+CREATE DATABASE db_producto;
+CREATE DATABASE db_reporte;
+CREATE DATABASE db_categoria;
+
+URL'S SWAGGER
+
+Usuario: http://localhost:8081/usuario/swagger-ui.html
+Categoria: http://localhost:8082/categoria/swagger-ui.html
+Producto: http://localhost:8083/producto/swagger-ui.html
+Inventario: http://localhost:8084/inventario/swagger-ui.html
+Carrito: http://localhost:8085/carrito/swagger-ui.html
+Pedido: http://localhost:8086/pedido/swagger-ui.html
+Pagos: http://localhost:8087/pagos/swagger-ui.html
+Envio: http://localhost:8088/envio/swagger-ui.html
+Notificacion: http://localhost:8089/notificacion/swagger-ui.html
+Reporte: http://localhost:8090/reporte/swagger-ui.html
