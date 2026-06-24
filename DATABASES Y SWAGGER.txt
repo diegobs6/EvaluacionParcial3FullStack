@@ -25,6 +25,20 @@ Notificacion: http://localhost:8089/notificacion/swagger-ui.html
 Reporte: http://localhost:8090/reporte/swagger-ui.html
 
 
+Url's Api-Gateway
+
+Usuario: http://localhost:8080/v1/usuarios
+categoria: http://localhost:8080/api/categorias
+producto:  http://localhost:8080/api/productos
+inventario: http://localhost:8080/v1/inventario
+carrito:
+pedido: http://localhost:8080/v1/pedidos
+pagos: http://localhost:8080/v1/pagos
+envios: http://localhost:8080/v1/envios
+notificacion: http://localhost:8080/api/notificaciones
+reporte: http://localhost:8080/api/reportes
+
+
 1.abrir laragon y docker
 2. crear las base de datos
 4.clonar el repositorio de github: git clone https://github.com/AndresMarin2410/EvaluacionParcial3FullStack.git
