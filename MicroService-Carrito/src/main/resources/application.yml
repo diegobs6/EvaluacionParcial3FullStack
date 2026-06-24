@@ -38,5 +38,5 @@ eureka:
       defaultZone: ${EUREKA_URL:http://localhost:8761/eureka/}
 
 microservicios:
-  productos:
+  usuarios:
     url: http://localhost:8081
