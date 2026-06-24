@@ -23,3 +23,11 @@ Pagos: http://localhost:8087/pagos/swagger-ui.html
 Envio: http://localhost:8088/envio/swagger-ui.html
 Notificacion: http://localhost:8089/notificacion/swagger-ui.html
 Reporte: http://localhost:8090/reporte/swagger-ui.html
+
+
+1.abrir laragon y docker
+2. crear las base de datos
+4.clonar el repositorio de github: git clone https://github.com/AndresMarin2410/EvaluacionParcial3FullStack.git
+5.Comandos Docker
+.\build-all.ps1
+docker compose up --build
